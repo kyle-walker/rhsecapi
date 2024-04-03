@@ -12,7 +12,7 @@
 %endif
 
 Name:       rhsecapi
-Version:    1.0.5
+Version:    1.0.6
 Release:    1%{?dist}
 Summary:    Provides a simple interface for the Red Hat Security Data API
 
@@ -132,3 +132,6 @@ popd
 %endif
 
 %changelog
+* Wed Apr 03 2024 Kyle Walker <kwalker@redhat.com> 1.0.6-1
+- new package built with tito
+
