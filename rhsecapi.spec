@@ -11,14 +11,14 @@
 %endif
 %endif
 
-Name:       {{{ git_name }}}
-Version:    {{{ git_version }}}
+Name:       rhsecapi
+Version:    1.0.6
 Release:    1%{?dist}
 Summary:    Provides a simple interface for the Red Hat Security Data API
 
 License:    GPL
 URL:        https://github.com/RedHatOfficial/rhsecapi
-Source:     {{{ git_pack }}}
+Source:     %{name}-%{version}.tar.gz
 
 %if %{with python3}
 BuildRequires:  python3-devel python3-setuptools
@@ -132,5 +132,6 @@ popd
 %endif
 
 %changelog
-{{{ git_changelog }}}
+* Wed Apr 03 2024 Kyle Walker <kwalker@redhat.com> 1.0.6-1
+- new package built with tito
 
