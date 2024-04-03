@@ -11,14 +11,15 @@
 %endif
 %endif
 
-Name:       {{{ git_name }}}
-Version:    {{{ git_version }}}
+Name:       {{{ git_dir_name }}}
+Version:    {{{ git_dir_version }}}
 Release:    1%{?dist}
 Summary:    Provides a simple interface for the Red Hat Security Data API
 
 License:    GPL
 URL:        https://github.com/RedHatOfficial/rhsecapi
-Source:     {{{ git_pack }}}
+VCS:        {{{ git_dir_vcs }}}
+Source:     {{{ git_dir_pack }}}
 
 %if %{with python3}
 BuildRequires:  python3-devel python3-setuptools
@@ -132,5 +133,5 @@ popd
 %endif
 
 %changelog
-{{{ git_changelog }}}
+{{{ git_dir_changelog }}}
 

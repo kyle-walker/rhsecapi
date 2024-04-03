@@ -1,6 +1,6 @@
 #!/bin/bash
 
-function git_version {
+function git_dir_version {
     declare name="$(cached git_name)" "$@"
 
     latest_tag="$(git tag --list --sort=-taggerdate | tail -1)"
